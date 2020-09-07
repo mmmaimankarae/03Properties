@@ -1,0 +1,8 @@
+Main-Class: icon.BeanWIcon
+
+Name: icon/BeanWIcon.class
+Java-Bean: True
+
+Name: icon/BeanWIconBeanInfo.class
+Java-Bean: False
+

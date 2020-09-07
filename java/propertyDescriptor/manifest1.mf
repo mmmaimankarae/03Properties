@@ -1,0 +1,4 @@
+Main-Class: propertydesc.PropertyDesc
+
+Name: propertydesc/PropertyDesc.class
+Java-Bean: True
