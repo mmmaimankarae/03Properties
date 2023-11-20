@@ -1,4 +1,4 @@
-package propertydesc;
+package propertyDescriptor.propertydesc;
 
 import java.awt.*;
 import java.awt.event.*;

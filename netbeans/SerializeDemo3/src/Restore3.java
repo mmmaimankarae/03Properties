@@ -1,5 +1,5 @@
 import java.io.*;
-
+/* อ่านไฟล์กลับขึ้นมาแบบDefault */
 public class Restore3 {
   public static void main(String args[]) {
     try {

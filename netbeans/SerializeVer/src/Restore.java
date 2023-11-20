@@ -1,6 +1,5 @@
 //package version;
 import java.io.*;
-
 public class Restore {
   public static void main(String args[]) {
     try {

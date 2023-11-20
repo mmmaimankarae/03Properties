@@ -1,14 +1,13 @@
 package veto;
 import java.beans.*;
-
-public class Police 
-implements VetoableChangeListener {
+/* 2. Listener implement VetoableChangeListener */
+public class Police implements VetoableChangeListener {
   private static final int MAXSPEED = 85;
   private static final int MINSPEED = 0;
 
   public Police() {
   }
-
+  /* 3. Event ที่ส่งออกมา */
   public void vetoableChange(PropertyChangeEvent pce) 
   throws PropertyVetoException {
     if(pce.getPropertyName().equals("speed")) {
@@ -19,6 +18,5 @@ implements VetoableChangeListener {
       }
     }
   }
-} 
-  
-      
+}
+ 

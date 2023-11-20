@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.io.*;
 import java.util.*;
-
+/* Main Program Save Object แบบDefault */
 public class Save2 {
   public static void main(String args[]) {
     try {
@@ -23,14 +23,3 @@ public class Save2 {
     }
   }
 }
-
-/*class Person implements Serializable {
-  private String name, phone;
-  public Person(String name, String phone) {
-    this.name = name;
-    this.phone = phone;
-  }
-  public String toString() {
-    return "[" + name + "," + phone + "]";
-  }
-}*/

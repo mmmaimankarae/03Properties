@@ -1,9 +1,9 @@
 import java.awt.*;
 import java.io.*;
-
+/* Main Program Save Object แบบDefault */
 public class Save3 {
   public static void main(String args[]) {
-    try {
+    try { /* เขียนแบบPrimitive type */
       FileOutputStream fos;
       fos = new FileOutputStream("save3.data");
       ObjectOutputStream oos;

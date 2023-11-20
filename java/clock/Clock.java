@@ -6,7 +6,8 @@ import java.util.*;
 
 public class Clock extends Panel implements Runnable {
   private TextField tf;
- private transient Thread thread;
+  /* ประกาศว่าไม่ต้องSave Thread ลงไป */
+  private transient Thread thread;
  //private Thread thread;
 
   public Clock() {
@@ -33,12 +34,13 @@ public class Clock extends Panel implements Runnable {
       ex.printStackTrace();
     }
   }
-
+  /* Override Read เพื่อให้เมื่ออ่านนาฬิกาอีกรอบ
+   * มันเดินต่อจากเวลาที่Save */
   private void readObject(ObjectInputStream ois) 
   throws IOException, ClassNotFoundException {
     try {
-      ois.defaultReadObject();
-      startThread();
+      ois.defaultReadObject(); /* Call Read Default */
+      startThread(); /* method ที่สร้างThread ใหม่ขึ้นมา */
     }
     catch(Exception ex) {
       ex.printStackTrace();
